@@ -1,0 +1,4 @@
+rootProject.name = 'hapi-profiler'
+include 'dstu2'
+include 'dstu3'
+

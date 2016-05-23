@@ -1,0 +1,19 @@
+group 'chatt.hapi-profiler'
+version '0.0.0'
+
+apply plugin: 'java'
+
+subprojects{
+    repositories{
+        maven { url 'http://nexus/content/repositories/public/' }
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile 'org.jboss.forge.roaster:roaster-api:+'
+    compile 'org.jboss.forge.roaster:roaster-jdt:+'
+    compile 'com.google.guava:guava:+'
+    compile 'com.intellij:annotations:+'
+    testCompile 'junit:junit:+'
+}
